@@ -5,7 +5,7 @@ View Django Settings via URL
 [![Latest PyPI version](https://pypip.in/version/django-settings-view-as-json/badge.svg)](https://crate.io/packages/django-settings-view-as-json/)
 [![Number of PyPI downloads](https://pypip.in/download/django-settings-view-as-json/badge.svg)](https://crate.io/packages/django-settings-view-as-json/)
 
-![Alt text](/screenshot.png?raw=true "Screenshot")
+![](/screenshot.png?raw=true)
 
 ## Why
 
@@ -43,7 +43,7 @@ url(r'^settings/$', user_passes_test(lambda u: u.is_superuser)(settings_view.as_
 
 # JSON In Browser
 
-I recommend [![Chrome JsonView Plugin](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+I recommend ![[Chrome JsonView Plugin](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
 
 ## TODO
 
