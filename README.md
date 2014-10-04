@@ -41,7 +41,7 @@ url(r'^settings/$', user_passes_test(lambda u: u.is_superuser)(settings_view.as_
 
 ```
 
-# JSON In Browser
+## JSON In Browser
 
 I recommend ![[Chrome JsonView Plugin](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
 
