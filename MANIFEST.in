@@ -11,4 +11,4 @@ recursive-include docs *
 recursive-include django_settings_view_as_json *
 recursive-exclude . *.pyc
 recursive-exclude . *.pyo
-
+recursive-exclude . .idea *
