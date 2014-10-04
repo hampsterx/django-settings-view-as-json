@@ -2,8 +2,8 @@
 
 View Django Settings via URL
 
-[![Latest PyPI version](https://pypip.in/v/django-settings-view-as-json/badge.png)](https://crate.io/packages/django-settings-view-as-json/)
-[![Number of PyPI downloads](https://pypip.in/d/django-settings-view-as-json/badge.png)](https://crate.io/packages/django-settings-view-as-json/)
+[![Latest PyPI version](https://pypip.in/version/django-settings-view-as-json/badge.svg)](https://crate.io/packages/django-settings-view-as-json/)
+[![Number of PyPI downloads](https://pypip.in/download/django-settings-view-as-json/badge.svg)](https://crate.io/packages/django-settings-view-as-json/)
 
 ## Why
 
