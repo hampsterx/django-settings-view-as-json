@@ -13,6 +13,12 @@ Because sometimes its confusing what settings are in use in your staging environ
 
 * Recursively nulls out any sensitive key values (eg passwords)
 
+## Install
+
+```python
+pip install django-settings-view-as-json install
+```
+
 ## Usage
 
 ```python
@@ -21,7 +27,7 @@ from django_settings_view_as_json import settings_view
 url(r'^settings/$', settings_view.as_view(), name='settings'),
 ```
 
-# Security Warning
+## Security Warning
 
 I highly recommend limiting this URL to either non production environments or at least Super user's. Eg
 
