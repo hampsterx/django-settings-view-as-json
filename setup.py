@@ -2,6 +2,7 @@
 
 import os
 import codecs
+import uuid
 
 from setuptools import setup
 from pip.req import parse_requirements
@@ -15,9 +16,9 @@ setup(
     name='django-settings-view-as-json',
     author='Tim van der Hulst',
     author_email='tim.vdh@gmail.com',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/hampsterx/django-settings-view-as-json',
-    install_requires=[str(ir.req) for ir in parse_requirements('requirements.txt')],
+    install_requires=[str(ir.req) for ir in parse_requirements('requirements.txt', session=uuid.uuid4())],
     py_modules=['django_settings_view_as_json'],
     license=read('LICENSE'),
     description='View Django Settings at a URL',

@@ -2,13 +2,7 @@ include LICENSE
 include README.md
 include setup.py
 include requirements.txt
-recursive-include deploy *
-recursive-include fixtures *
-recursive-include requirements *
-recursive-include static *
-recursive-include templates *
-recursive-include docs *
-recursive-include django_settings_view_as_json *
+
 recursive-exclude . *.pyc
 recursive-exclude . *.pyo
 recursive-exclude . .idea *

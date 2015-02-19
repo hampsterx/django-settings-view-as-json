@@ -25,4 +25,4 @@ tmp/**
 tmp/**/*
 environment.ini
 .coverage
-MANIFEST.in
+build
