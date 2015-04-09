@@ -1,3 +1,5 @@
+import copy
+
 from django.views.generic import View
 from braces.views import JSONResponseMixin
 
@@ -55,7 +57,7 @@ class settings_view(JSONResponseMixin, View):
 
         for k in dir(settings):
             if k.isupper():
-                data[k] = getattr(settings, k)
+                data[k] = copy.deepcopy(getattr(settings, k))
 
         null_key_values(data, "password")
         null_key_values(data, "secret")
