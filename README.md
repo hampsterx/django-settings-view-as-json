@@ -49,3 +49,6 @@ I recommend [Chrome JsonView Plugin](https://chrome.google.com/webstore/detail/j
 
 * Make sensitive key list a setting
 
+## Changelog
+
+    * 0.0.5 Fix issue with deep cloning

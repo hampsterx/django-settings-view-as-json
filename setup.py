@@ -16,7 +16,7 @@ setup(
     name='django-settings-view-as-json',
     author='Tim van der Hulst',
     author_email='tim.vdh@gmail.com',
-    version='0.0.4',
+    version='0.0.5',
     url='https://github.com/hampsterx/django-settings-view-as-json',
     install_requires=[str(ir.req) for ir in parse_requirements('requirements.txt', session=uuid.uuid4())],
     py_modules=['django_settings_view_as_json'],

@@ -43,7 +43,7 @@ def serialize_function_values(the_dict):
 
             continue
 
-        the_dict[key] = "{} ({})".format(unicode(val), val.__class__.__name__)
+        the_dict[key] = u"{} ({})".format(unicode(val), val.__class__.__name__)
 
 
 class settings_view(JSONResponseMixin, View):
@@ -57,7 +57,13 @@ class settings_view(JSONResponseMixin, View):
 
         for k in dir(settings):
             if k.isupper():
-                data[k] = copy.deepcopy(getattr(settings, k))
+                try:
+                    data[k] = copy.deepcopy(getattr(settings, k))
+                except:
+                    try:
+                        data[k] = copy.copy(getattr(settings, k))
+                    except:
+                        data[k] = getattr(settings, k).__class__.__name__
 
         null_key_values(data, "password")
         null_key_values(data, "secret")
