@@ -1,5 +1,6 @@
 import copy
 
+from collections import OrderedDict
 from django.views.generic import View
 from braces.views import JSONResponseMixin
 
@@ -53,7 +54,7 @@ class settings_view(JSONResponseMixin, View):
     def get(self, request, *args, **kwargs):
 
         from django.conf import settings
-        data = dict()
+        data = OrderedDict()
 
         for k in dir(settings):
             if k.isupper():
