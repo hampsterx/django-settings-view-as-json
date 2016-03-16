@@ -1,5 +1,6 @@
 import copy
 
+import inspect
 from collections import OrderedDict
 from django.views.generic import View
 from braces.views import JSONResponseMixin
@@ -38,9 +39,11 @@ def serialize_function_values(the_dict):
             continue
 
         elif isinstance(val, list):
-            for item in val:
+            for i, item in enumerate(val):
                 if isinstance(item, dict):
                     serialize_function_values(item)
+                elif inspect.isclass(item):
+                    val[i] = repr(item)
 
             continue
 
