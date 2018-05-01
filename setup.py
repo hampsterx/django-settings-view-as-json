@@ -16,7 +16,7 @@ setup(
     name='django-settings-view-as-json',
     author='Tim van der Hulst',
     author_email='tim.vdh@gmail.com',
-    version='0.0.8',
+    version='0.0.9',
     url='https://github.com/hampsterx/django-settings-view-as-json',
     install_requires=[
         "Django",

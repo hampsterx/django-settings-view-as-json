@@ -2,8 +2,7 @@
 
 View Django Settings via URL
 
-[![Latest PyPI version](https://img.shields.io/pypi/v/django-settings-view-as-json.svg)](https://crate.io/packages/django-settings-view-as-json/)
-[![Number of PyPI downloads](https://img.shields.io/pypi/dm/django-settings-view-as-json.svg)](https://crate.io/packages/django-settings-view-as-json/)
+[![PyPI version](https://badge.fury.io/py/django-settings-view-as-json.svg)](https://badge.fury.io/py/django-settings-view-as-json)
 
 ![](/screenshot.png?raw=true)
 
