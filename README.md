@@ -51,4 +51,6 @@ I recommend [Chrome JsonView Plugin](https://chrome.google.com/webstore/detail/j
 
 ## Changelog
 
+    * 0.0.8 pip 10 compatability
+    * 0.0.7 Fix serialisation of classes
     * 0.0.6 Fix issue with deep cloning (fallback to shallow)
